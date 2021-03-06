@@ -20,6 +20,7 @@ body {
   .container .box {
     position: relative;
     width: 3500px;
+    height: 500px;
     padding: 40px;
     background: rgb(213, 228, 1);
     box-shadow: 0 5px 15px rgb(0, 0, 0);
@@ -36,7 +37,6 @@ body {
     height: 70px;
     align-items: center;
     color: rgb(243, 243, 243);
-    background: #000;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -49,28 +49,31 @@ body {
     cursor: pointer;
   }
   
-  .icon:hover,
+  .icon:hover, button, button:focus,button:active, button:hover,
   .icon:focus .icon:active {
     box-shadow: 0 0 20px rgb(0, 0, 0);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
   }
   
-  .icon {
-    color: white;
-    box-shadow: red;
-    background: red;
-    text-decoration: none;
 
-  }
 
   button { 
-   border: none;
-    
+   border: thin;
+   cursor: pointer;
+   padding: 20px;
+   display: inline-block;
+   font-size: 20px;
+   margin: 4px 2px;
+   border-radius: 50%;
+}
 
 
+.button {
 
-  }
+ border-radius: 50%;
+
+}
 
 
 
