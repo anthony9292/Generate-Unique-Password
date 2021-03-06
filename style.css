@@ -20,10 +20,10 @@ body {
   .container .box {
     position: relative;
     width: 3500px;
-    height: 500px;
+    height: 400px;
     padding: 40px;
-    background: rgb(213, 228, 1);
-    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgb(255, 0, 0);
     border-radius: 4px;
     margin: 20px;
     box-sizing: border-box;
@@ -51,7 +51,7 @@ body {
   
   .icon:hover, button, button:focus,button:active, button:hover,
   .icon:focus .icon:active {
-    box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 0, 0);
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
   }
@@ -82,3 +82,13 @@ body {
     text-align: center;
    }
   
+   
+   .result {
+
+   background-color: rgb(255, 255, 255);
+   height: 50px;
+   width: 500px 40px;
+
+   text-align: center;
+
+   }
