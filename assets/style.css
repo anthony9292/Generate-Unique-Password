@@ -39,6 +39,97 @@ margin-top: 50px;
 .box input[type ="text"] {
 
 color: gray;
+width: 80%;
+font-weight: bold;
+
+}
+
+
+.box span { 
+
+color: rgb(7, 6, 6);
+background-color: gray;
+border: 1px solid white; 
+padding: 2px;
+cursor: pointer;
+
+}
+
+
+.box span:hover {
+
+color: rgb(0, 0, 0);
+
+}
+.box label {
+
+position: relative;
+color: white;
+font-size: 20px;
+display: block;
+text-align: left;
+padding-left: 15px;
+user-select: none;
+
+}
+
+
+.box label input[type="number"] { 
+
+  position:absolute;
+  right: 20px; 
+  color: black;
+  width: 50px;
+  font-weight:bold;
+}
+
+.box input[type="checkbox"] {
+
+height: 0;
+width: 0;
+
+}
+
+
+.box label i {
+
+position: absolute;
+right: 20px;
+height: 30px;
+width: 30px;
+background-color: rgb(39, 39, 39);
+cursor: pointer;
+
+
+}
+
+.box label i:hover {
+  
+  background-color: rgb(138, 138, 138);
+  
+}
+
+.box label i::after {
+
+content: "\2714";
+position: absolute;
+top: -2px;
+right: 7px;
+display: none;
+color: white;
+
+
+}
+
+.box label input:checked ~ .mark:after{
+
+display: block;
+
+}
+
+.box label input:checked ~ .mark{
+
+background-color: rgb(59, 59, 59);
 
 }
 
@@ -46,4 +137,4 @@ color: gray;
 
 
 
-}
+
