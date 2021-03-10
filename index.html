@@ -2,56 +2,35 @@
 <html lang="en">
 
 <head>
-
-  <link rel= "stylesheet" href="./assets/reset.css">
-   <link rel= "stylesheet" href= "./assets/style.css">
-  <title>Random Password generator</title>
-</head>
-<body>
-
-
- <header> 
+  
   <h1>Password Generator</h1>
-</header>
 
+</head>
 
-<section class="container">
-<div class= "box">
-<h2 class = card-tittle>generate a password</h2>
-<textarea readonly id= "password"
-placeholder="Your secure password"></textarea>
-  <button type="button" class="btn btn-ranger" id="generate">Generate Password</button>
-      <button type="button" class="btn btn-dark" id = "clipboard">Copy to clipboard</button>
+  <div class="interface">
+    <br>
+ <input type="text" readonly></input>
+ <span id="copy"><i class = "far fa-copy"></i></span>
+ <br>
+ <br>
+ <label>Length: <input type="number" name="length" min="0" name="length"></input></label>
+ <br>
+ <label>Lowercase: <input type="checkbox" name="lowercase"></input><i class="mark"></i></label>
+ <br>
+ <label>Uppercase: <input type="checkbox" name="uppercase"></input><i class="mark"></i></label>
+ <br>
+ <label>Numbers: <input type="checkbox" name="number"></input><i class="mark"></i></label>
+ <br>
+ <label>Symbols: <input type="checkbox" name="symbol"></input><i class="mark"></i></label>
+ <br>
+ <button>Generate Password<i class="fas fa-plus-circle"></i></button>
 
-</div>
-</section>
-
-
-
-
-</body>
-</html>
-
-  <!---<script src= "java/script.js"></script>
-</body>
-</html>
-
-
-
-
-
-< section class-"container">
-<div class= "box">
-<h2 class = card-tittle>generate a password</h2>
-textarea readonly id= "password"
-
-
-<div class="card-one">
-    <div class="card-body">
-      <h2 class= card-tittle>Generate a Password</h2>
-      <textarea readonly id ="password" 
-      placeholder="Your secure password"></textarea>
-      <button type="button" class="btn btn-ranger" id="generate">Generate Password</button>
-      <button type="button" class="btn btn-dark" id = "clipboard">Copy to clipboard</button>
-    </div>
   </div>
+  
+<script type="text/javascript" src="./java/script.js"></script>
+</body>
+</html>
+
+
+
+
