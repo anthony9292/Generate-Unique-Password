@@ -1,3 +1,5 @@
+
+//DOM elements
 var _length = document.querySelector('input[name="length"]');
 var _lowercase = document.querySelector('input[name="lowercase"]');
 var _uppercase = document.querySelector('input[name="uppercase"]');
@@ -5,6 +7,8 @@ var _number = document.querySelector('input[name="number"]');
 var _symbol = document.querySelector('input[name="symbol"]');
 var copy = document.getElementById("copy");
 var generateButton = document.querySelector('.box button');
+
+
 
 
 const key_strings = {
@@ -16,7 +20,7 @@ const key_strings = {
 };
 
 
-  
+//generate password click event 
 generateButton.addEventListener("click", () => {
   var length = +_length.value;
   var activeLower = _lowercase.checked;
@@ -28,7 +32,7 @@ generateButton.addEventListener("click", () => {
  
  
  });
-
+//copy script to clipboard and alert  window alert box//
 copy.addEventListener("click", () => {
 	var _password = document.querySelector('input[type="text"]');
     if(_password.value != "" && _password.value != "Include any key string and define the length!"){
@@ -38,7 +42,7 @@ copy.addEventListener("click", () => {
 	}
 });
 
-
+//Generate password function 
 function generateRandomPassword(lower, upper, num, sym, length) {
   let MAIN_STRING = "";
 	let PASSWORD = "";
@@ -52,9 +56,6 @@ function generateRandomPassword(lower, upper, num, sym, length) {
 
 };
 
-
-
-
 for(i=0; i<Object.keys(options).length;i++){
    MAIN_STRING +=(Object.values(options)[i]) ? key_strings[Object.keys(options)[i]] : "";
 }
@@ -64,13 +65,12 @@ if(MAIN_STRING != "" && length > 0) {
   PASSWORD += MAIN_STRING[Math.floor(Math.random() * MAIN_STRING.length)];
   }
 
+//display generated password in text element 
   document.querySelector('input[type="text"]').value = PASSWORD;
-
-
-
 
 }else{
 
+//text if no click events are attacked
  document.querySelector('input[type="text"]').value = "Include any key string and define the length!";
 }
 

@@ -1,13 +1,14 @@
 
+
+/*page styling*/
+
+
 title {
 
   color:  black;
 
 
 }
-
-
-
 
 html {
 background-color: white; 
@@ -24,6 +25,8 @@ text-align: center;
 user-select: none;
 }
 
+
+/**box styling*/
 .box {
 text-align: center;
 background: linear-gradient(45deg, rgb(0, 0, 0),rgb(170, 170, 170));
@@ -158,3 +161,9 @@ background-color: rgb(0, 0, 0);
   
   }
   
+
+
+/*media*/
+@media only screen and (max-width: 700px) {
+	.interface{width:80%;}
+}
